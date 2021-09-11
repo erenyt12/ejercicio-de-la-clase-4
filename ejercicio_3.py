@@ -1,5 +1,6 @@
 
 from functools import reduce
+from operator import itemgetter, add
 """ Ejercicio 3:
     Realiza una fn aculado, que devuelva el valor acumulado 
     de la suma de una lista de numeros mas 100.
@@ -19,6 +20,7 @@ Numeros = [2, 4, 6, 7, 9]
 def sum(list: list[int]) -> int:
     """ recupera los valores de una lista y los suma, al resultado se le suma 100  """
     resultado = reduce(lambda x, y: x + y, list, 100)
+    resultado_1 = reduce(add,list, 100)
     print(resultado)
 
 # Utilizacion de la fn 
@@ -38,4 +40,3 @@ def acumulando(num: list[int]) -> int:
 # acumulando(Numeros)
 
 
-ñ
