@@ -26,4 +26,13 @@ categoria = ['Categoria B', 'Categoria C', 'Categoria A', 'Categoria D']
 def asociar(lista_1, lista_2):
     """ recibe dos listas de la misma longitud de elementos y devuelve un diccionario de pares 
     asociando cada elemento de ambas listas segun su indice """
+    x = [lista_1]
+    y = [lista_2]
+    return dict(zip(lista_1,lista_2))
+
     
+
+    
+
+variable = asociar(empleado, categoria)
+print(variable)
